@@ -1,6 +1,9 @@
-#generate code to input name and age and print them
-class Task:
-    def __init__(self, title, description, status="Pending"):
-        self.title = title
-        self.description = description
-        self.status = status
+# Get user input
+name = input("Please enter your name: ")
+age = int(input("Please enter your age: "))
+
+# Check age and print appropriate message
+if age >= 18:
+    print(f"Hello {name}, you are over 18 years old.")
+else:
+    print(f"Hello {name}, you are under 18 years old.")
